@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:textSize="40sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconDrawable="@drawable/ic_calendar"
+        app:endIconMode="custom"
+        android:id="@+id/loDeliveryDate">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose delivery date"
+            android:id="@+id/etDeliveryDate"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voucher"
+                android:textSize="18sp"/>
+
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentEnd="true"
+               android:orientation="horizontal">
+
+
+               <EditText
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:hint="Use voucher"
+                   android:textSize="12sp"
+                   android:textAlignment="center"
+                   android:editable="false"
+                   android:id="@+id/etVoucher"
+                   android:background="@drawable/pin_layout" />
+
+
+
+           </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price:"
+                android:textSize="18sp"
+                android:layout_marginEnd="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₱"
+                android:textSize="18sp"
+                android:layout_marginEnd="3dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="900"
+                android:textSize="18sp"
+                android:id="@+id/tvCheckoutPrice"/>
+
+
+
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHECKOUT"
+            app:cornerRadius="5dp"
+            android:id="@+id/btnDialogCheckout"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

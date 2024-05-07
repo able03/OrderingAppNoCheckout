@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="success_color_bg">#B8FBBB</color>
+    <color name="success_color_text">#006304</color>
+
+    <color name="failed_color_bg">#FFB4B4</color>
+    <color name="failed_color_text">#980000</color>
+
+</resources>
